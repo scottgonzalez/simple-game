@@ -1,0 +1,25 @@
+{
+  "name": "simple-game",
+  "version": "0.0.0",
+  "description": "Simple framework for turn-based games played to points",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scottgonzalez/simple-game.git"
+  },
+  "keywords": [
+    "game",
+    "turn-based",
+    "point-based"
+  ],
+  "author": {
+    "name": "Scott González",
+    "email": "scott.gonzalez@gmail.com",
+    "url": "http://scottgonzalez.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scottgonzalez/simple-game/issues"
+  },
+  "homepage": "https://github.com/scottgonzalez/simple-game"
+}
