@@ -21,5 +21,12 @@
   "bugs": {
     "url": "https://github.com/scottgonzalez/simple-game/issues"
   },
-  "homepage": "https://github.com/scottgonzalez/simple-game"
+  "homepage": "https://github.com/scottgonzalez/simple-game",
+  "scripts": {
+    "test": "nodeunit tests/**"
+  },
+  "devDependencies": {
+    "nodeunit": "^0.9.1",
+    "sinon": "^1.15.4"
+  }
 }

@@ -11,7 +11,7 @@ function extend(a, b) {
 }
 
 function Player(options) {
-	this.options = options;
+	this.options = options || {};
 	this.score = 0;
 
 	Events.EventEmitter.call(this);
