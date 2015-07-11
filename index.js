@@ -58,8 +58,9 @@ extend(Player.prototype, {
 });
 
 function Game(options) {
+	options = options || {};
 	this.maxPoints = options.maxPoints || 15;
-	this.winBy2 = options.winBy2 || true;
+	this.winBy2 = "winBy2" in options ? options.winBy2 : true;
 	this.players = [];
 
 	Events.EventEmitter.call(this);
@@ -92,11 +93,11 @@ extend(Game.prototype, {
 
 		if (!this.winBy2 ||
 				orderedPlayers[0].getScore() > (orderedPlayers[1].getScore() + 1)) {
-			return this.endGame(orderedPlayers[0]);
+			return this.end(orderedPlayers[0]);
 		}
 	},
 
-	endGame: function(winner) {
+	end: function(winner) {
 		this.emit("end", this.orderedPlayers());
 	},
 
